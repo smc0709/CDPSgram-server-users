@@ -7,9 +7,14 @@ var bodyParser = require('body-parser');
 var partials = require('express-partials');
 var methodOverride = require('method-override');
 
+var user = require('./routes/user')
 var routes = require('./routes/index');
 
 var app = express();
+
+
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
